@@ -1,0 +1,282 @@
+/*@import "compass/css3";*/
+
+.selected-week td a {
+    border: 1px solid #2c7ab1!important;
+    background: #2c7ab1!important;
+    font-weight: normal!important;
+    color: #fff!important;
+}
+
+.hidden {
+    display: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.nohidden {
+    overflow: visible!important;
+}
+
+.icon-fixed {
+    margin-top: -29px!important;
+}
+
+.no-date-period {
+    min-width: 430px!important;
+}
+
+.list-type-none {
+    list-style-type: none;
+}
+
+.scroll-y {
+    overflow-y: auto!important;
+}
+
+.swal2-container {
+    z-index: 99999!important;
+}
+
+.hidden {
+    display: none;
+}
+
+.md-button.md-default-theme.md-warn.md-fab,
+.md-button.md-warn.md-fab,
+.md-button.md-default-theme.md-warn.md-raised,
+.md-button.md-warn.md-raised {
+    color: rgb(255, 255, 255);
+    background-color: rgba(18, 101, 169, 0.84);
+}
+
+.datepickerdemoBasicUsage {
+    /** Demo styles for mdCalendar. */
+}
+
+.datepickerdemoBasicUsage md-content {
+    padding-bottom: 200px;
+}
+
+.datepickerdemoBasicUsage .validation-messages {
+    font-size: 12px;
+    color: #dd2c00;
+    margin-left: 15px;
+}
+
+.md-button.md-default-theme.md-primary.md-raised,
+.md-button.md-primary.md-raised,
+.md-button.md-default-theme.md-primary.md-fab,
+.md-button.md-primary.md-fab {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: rgb(16, 108, 200);
+}
+
+.material-icons {
+    font-size: 30px;
+}
+
+table.md-table th.md-column {
+    color: rgb(15, 96, 143);
+    font-size: 13px;
+    font-weight: 440;
+    white-space: nowrap;
+}
+
+md-expansion-panel-footer .md-expansion-panel-footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 48px;
+    line-height: 48px;
+    padding: 0 24px;
+    border-top: 0px solid;
+    box-sizing: border-box;
+}
+
+md-checkbox.md-checked.green .md-icon {
+    background-color: rgba(3, 66, 3, 0.87);
+}
+
+md-switch.md-default-theme.md-checked.md-primary .md-thumb,
+md-switch.md-checked.md-primary .md-thumb {
+    background-color: rgb(11, 129, 183);
+}
+
+.material-icons {
+    font-size: 25px;
+}
+
+body.md-default-theme,
+body,
+html.md-default-theme,
+html {
+    color: rgb(9, 95, 109);
+    background-color: rgb(250, 250, 250);
+}
+
+.md-default-theme .md-datepicker-input,
+.md-datepicker-input {
+    color: rgba(43, 43, 44, 0.87);
+}
+
+md-content.md-default-theme,
+md-content {
+    color: rgb(0, 6, 10);
+    background-color: rgba(255, 253, 253, 0.71);
+}
+
+.geotabButton {
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #c5dbec;
+    background-color: #e8f3fd;
+    color: #25477b;
+    text-decoration: none;
+    line-height: 18px;
+    display: inline-block;
+    position: relative;
+    padding: 6px 11px;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    min-height: 36px;
+    min-width: 70px;
+}
+
+.geotabButton.geotabButtonActive:not(.buttonDisabled),
+.geotabButton:not(.buttonDisabled):active {
+    color: #fff;
+    border-color: #2c7ab1;
+    background-color: #2c7ab1;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.optionsMenu_AutocompleteButton {
+    float: right;
+    clear: right;
+    margin-top: 0.5em;
+    margin-left: 5px;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.th-table {
+    background-color: #c8e3f0;
+    /*background-color: rgb(14, 97, 149);*/
+    color: rgb(31, 112, 204);
+}
+
+.tr:nth-child(even) {
+    background-color: #c8e3f0;
+}
+
+.upload-drop-zone {
+    height: 90px;
+    border-width: 2px;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+
+/* skin.css Style*/
+
+.upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 100px;
+    text-align: center
+}
+
+.upload-drop-zone.drop {
+    color: #222;
+    border-color: #222;
+}
+
+.md-default-theme .md-calendar-date.md-calendar-selected-date .md-calendar-date-selection-indicator,
+.md-calendar-date.md-calendar-selected-date .md-calendar-date-selection-indicator,
+.md-default-theme .md-calendar-date.md-focus.md-calendar-selected-date .md-calendar-date-selection-indicator,
+.md-calendar-date.md-focus.md-calendar-selected-date .md-calendar-date-selection-indicator {
+    background: rgb(14, 97, 149);
+    color: rgba(255, 255, 255, 0.87);
+    border-color: transparent;
+}
+
+
+/*
+md-select-menu {
+    margin-top: 50px;
+}
+
+md-input-container:not(.md-input-has-value) input:not(:focus),
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-ampm-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-day-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-hour-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-millisecond-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-minute-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-month-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-second-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-week-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-year-field,
+md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-text {
+    color: transparent;
+}*/
+
+md-select-menu-container {
+    z-index: 900;
+}
+
+
+/*md-backdrop.md-select-backdrop {
+    z-index: 0;
+}*/
+
+.dtp>.dtp-content>.dtp-date-view>header.dtp-header {
+    background: #ff4612;
+    color: #fff;
+    text-align: center;
+}
+
+.dtp div.dtp-date,
+.dtp div.dtp-time {
+    background: #ff4612;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.dtp table.dtp-picker-days tr>td>a.selected {
+    background: #ff4612;
+    color: #fff;
+}
+.dtp .dtp-hand.on {
+    background: #ff4612;
+}
+
+.dtp .dtp-picker-time>a.dtp-select-hour.selected {
+    background: #ff4612;
+    color: #fff;
+}

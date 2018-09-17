@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generador de reportes</title>
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/jquery-ui/themes/custom/jquery-ui.min.css">
+  <link rel="stylesheet" href="bower_components/jquery-ui/themes/custom/jquery-ui.theme.min.css">
+  <link rel="stylesheet" href="bower_components/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">
+  <link rel="stylesheet" href="bower_components/sweetalert2/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="scripts/waitMe/waitMe.min.css">
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/app.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <script src="bower_components/jquery-ui/ui/i18n/datepicker-es.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/lodash/dist/lodash.js"></script>
+  <script src="bower_components/angularjs-dropdown-multiselect/src/angularjs-dropdown-multiselect.js"></script>
+  <script src="bower_components/angular-click-outside/clickoutside.directive.js"></script>
+  <script src="bower_components/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
+  <script src="bower_components/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-es.js"></script>
+  <script src="bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <script src="scripts/waitMe/waitMe.min.js"></script>
+  <script src="scripts/angular-app.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <div id="reportessabanakof" ng-controller="reportsCtrl" class="clearfix">
+    <div class="geotabPageHeader">
+      <h1 class="geotabPageName">Generador de reportes <span class="subdued">Sábana de Datos</span></h1>
+    </div>
+    <!--multi-select size="4" name="'Zonas'" items="zones" selecteditems="selectedZones"></multi-select-->
+    <!--multi-select size="4" name="'Reglas'" items="rules" selecteditems="selectedRules"></multi-select-->
+    <div class="md-part-4">
+      <div class="geotabOptionsMenu nohidden no-date-period">
+        <div class="vanillaAccordionSubMenu">
+          <fieldset class="geotabOptionsMenuFieldset">
+            <legend class="rightOptionsMenuLabel">Seleccionar</legend>
+            <ul class="geotabOptionsMenuElements">
+              <li class="geotabOptionsMenuElement sm-part-12 list-type-none">
+                <multi-select name="'Vehículos'" items="devices" selecteditems="selectedDevices"></multi-select>
+              </li>
+              <li class="geotabOptionsMenuElement sm-part-12">
+                <label class="geotabOptionsMenuElementLabel md-part-5 sm-part-12">Tipo de reporte</label>
+                <div class="geotabOptionsMenuElementValue md-part-7 sm-part-12">
+                  <span class="horizontalButtonSet">
+                    <input type="radio" name="type" id="day" class="geotabSwitchButton" ng-model="consultType" ng-change="setConsultType(consultType)" value="day" ng-checked="consultType === 'day'">
+                    <label class="geotabButton onLabelSwitcher noTranslate" for="day">Diario</label>
+                    <input type="radio" name="type" id="week" class="geotabSwitchButton" ng-model="consultType" ng-change="setConsultType(consultType)" value="week" ng-checked="consultType === 'week'">
+                    <label class="geotabButton offLabelSwitcher noTranslate" for="week">Semanal</label>
+                    <input type="radio" name="type" id="month" class="geotabSwitchButton" ng-model="consultType" ng-change="setConsultType(consultType)" value="month" ng-checked="consultType === 'month'">
+                    <label class="geotabButton offLabelSwitcher noTranslate" for="month">Mensual</label>
+                  </span>
+                </div>
+              </li>
+              <li class="geotabOptionsMenuElement sm-part-12">
+                <label class="geotabOptionsMenuElementLabel md-part-5 sm-part-12">Fecha</label>
+                <div class="geotabOptionsMenuElementValue relative md-part-7 sm-part-12">
+                  <input class="dateRangeInput checkmateFormEditField hasDatePicker" type="text" id="dateConsult">
+                </div>
+              </li>
+            </ul>
+            <hr class="geotabOptionsMenuButtonSeperator">
+            <button class="optionsMenu_AutocompleteButton geotabButton" ng-click="consult()">Aplicar Cambios</button>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
